@@ -154,7 +154,7 @@ erDiagram
     }
     FLIGHT_CALENDAR {
         DATE date PK
-        UUID flightId PK FK
+        UUID flightId FK
         STRING source
         STRING destination
     }
@@ -167,6 +167,8 @@ erDiagram
     }
 
     FLIGHTS ||--o{ FLIGHT_CALENDAR : "has"
+
+
 ```
 
 ### 4.3 API Designs and Contracts
